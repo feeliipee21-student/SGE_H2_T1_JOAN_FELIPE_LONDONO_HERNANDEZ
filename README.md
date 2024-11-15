@@ -38,6 +38,17 @@ pip install matplotlib
 ### Instalar Backends de Matplotlib para Tkinter
 El soporte para integrar Matplotlib con interfaces de Tkinter está incluido en Matplotlib, por lo que no requiere instalación adicional.
 
+### Conexión de la Aplicación con MySQL
+Configura MySQL:
+
+### Asegúrate de tener un servidor MySQL instalado y en ejecución.
+Crea una base de datos llamada ENCUESTAS con la siguiente tabla
+
+### Configura el archivo de conexión en Python:
+
+Dentro de tu archivo principal (SGE_H2_T1_JOAN_FELIPE_LONDONO_HERNANDEZ.py o equivalente), configura la conexión a la base de datos usando el módulo mysql.connector.
+Asegúrate de reemplazar los datos del usuario, contraseña y nombre del host con los de tu entorno:
+
 ### Funcionalidades
 Crear Encuestas: Agrega nuevos registros de encuestas.
 Leer Encuestas: Consulta registros y filtra datos según criterios.
