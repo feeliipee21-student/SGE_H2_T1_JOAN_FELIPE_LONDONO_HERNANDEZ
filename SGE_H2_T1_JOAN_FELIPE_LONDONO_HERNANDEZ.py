@@ -349,11 +349,26 @@ def eliminar_registro():
 
 # Función para limpiar los campos de filtro y mostrar todos los datos
 def limpiar_campos():
-    edad_entry.delete(0, tk.END)         # Limpiar el campo de edad
-    sexo_combobox.set("")                # Limpiar el campo de sexo
-    bebidas_entry.delete(0, tk.END)      # Limpiar el campo de bebidas por semana
-    control_entry.delete(0, tk.END)      # Limpiar el campo de pérdidas de control
-    realizar_consulta()                  # Realizar consulta para mostrar todos los datos sin filtros
+    # Limpiar campos de entrada
+    edad_entry.delete(0, tk.END)
+    bebidas_entry.delete(0, tk.END)
+    cervezas_entry.delete(0, tk.END)
+    bebidas_fin_semana_entry.delete(0, tk.END)
+    bebidas_destiladas_entry.delete(0, tk.END)
+    vinos_entry.delete(0, tk.END)
+    control_entry.delete(0, tk.END)
+
+    # Limpiar Comboboxes
+    sexo_combobox.set("")
+    diversion_combobox.set("")
+    digestivos_combobox.set("")
+    tension_combobox.set("")
+    cabeza_combobox.set("")
+    order_combobox.set("")
+
+    # Actualizar la tabla después de limpiar los filtros
+    realizar_consulta()
+
 
 def realizar_consulta():
     # Obtener valores de los campos de filtro
